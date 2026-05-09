@@ -1,288 +1,1173 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna Eyewear | Kính mắt thời trang cao cấp</title>
+    <meta
+      name="description"
+      content="Anna Eyewear | Thương hiệu kính mắt thời trang với thiết kế tinh tế, hiện đại và cá tính dành cho phong cách sống trẻ."
+    />
+    <link
+      rel="icon"
+      href="logo_anna_header.svg"
+      type="image/svg+xml"
+      sizes="any"
+    />
+    <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anna Eyewear | Kính mắt thời trang cao cấp</title>
-  <meta name="description"
-    content="Anna Eyewear | Thương hiệu kính mắt thời trang với thiết kế tinh tế, hiện đại và cá tính dành cho phong cách sống trẻ." />
-  <link rel="icon" href="logo_anna_header.svg" type="image/svg+xml" sizes="any" />
-  <link rel="stylesheet" href="assets/css/style.css?v=2" />
-</head>
+  <body data-page="products">
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html"
+          ><img src="assets/images/logo_anna.png" alt="ANNA"
+        /></a>
+        <nav class="nav-links">
+          <a class="nav-link nav-link-main" href="index.html">Trang chủ</a>
+          <a class="nav-link nav-link-main active" href="san-pham.html"
+            >Sản phẩm</a
+          >
+          <a class="nav-link nav-link-main" href="ve-anna.html">Về Anna</a>
+          <a class="nav-link nav-link-main" href="ex-about-us.html">Giới thiệu</a>
+          <a class="nav-link nav-link-main" href="lien-he.html">Liên hệ</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn-primary desktop-only" href="san-pham.html"
+            >Khám phá ngay</a
+          >
+          <button
+            class="icon-button"
+            id="nav-favorite-icon"
+            data-open-drawer="favorite"
+            aria-label="Yêu thích"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              /></svg
+            ><span class="icon-badge accent-gradient" data-favorite-count hidden
+              >0</span
+            >
+          </button>
+          <button
+            class="icon-button"
+            id="nav-cart-icon"
+            data-open-drawer="cart"
+            aria-label="Giỏ hàng"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="20" cy="21" r="1" />
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              /></svg
+            ><span class="icon-badge accent-gradient" data-cart-count hidden
+              >0</span
+            >
+          </button>
+          <button
+            class="icon-button menu-toggle"
+            data-menu-toggle
+            aria-label="Mở menu"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
 
-<body data-page="products">
-  <header class="site-header">
-    <div class="nav-shell">
-      <a class="brand" href="index.html"><img src="assets/images/logo_anna.png" alt="ANNA" /></a>
-      <nav class="nav-links">
+    <div class="mobile-menu" data-mobile-menu>
+      <nav>
         <a class="nav-link nav-link-main" href="index.html">Trang chủ</a>
-        <a class="nav-link nav-link-main active" href="san-pham.html">Sản phẩm</a>
+        <a class="nav-link nav-link-main active" href="san-pham.html"
+          >Sản phẩm</a
+        >
         <a class="nav-link nav-link-main" href="ve-anna.html">Về Anna</a>
+        <a class="nav-link nav-link-main" href="ex-about-us.html">Giới thiệu</a>
         <a class="nav-link nav-link-main" href="lien-he.html">Liên hệ</a>
       </nav>
-      <div class="nav-actions">
-        <a class="btn-primary desktop-only" href="san-pham.html">Khám phá ngay</a>
-        <button class="icon-button" id="nav-favorite-icon" data-open-drawer="favorite" aria-label="Yêu thích">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path
-              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-          </svg><span class="icon-badge accent-gradient" data-favorite-count hidden>0</span>
-        </button>
-        <button class="icon-button" id="nav-cart-icon" data-open-drawer="cart" aria-label="Giỏ hàng">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-            <circle cx="9" cy="21" r="1" />
-            <circle cx="20" cy="21" r="1" />
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
-          </svg><span class="icon-badge accent-gradient" data-cart-count hidden>0</span>
-        </button>
-        <button class="icon-button menu-toggle" data-menu-toggle aria-label="Mở menu">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="3" y1="6" x2="21" y2="6" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <line x1="3" y1="18" x2="21" y2="18" />
-          </svg>
-        </button>
-      </div>
     </div>
-  </header>
 
-  <div class="mobile-menu" data-mobile-menu>
-    <nav>
-      <a class="nav-link nav-link-main" href="index.html">Trang chủ</a>
-      <a class="nav-link nav-link-main active" href="san-pham.html">Sản phẩm</a>
-      <a class="nav-link nav-link-main" href="ve-anna.html">Về Anna</a>
-      <a class="nav-link nav-link-main" href="lien-he.html">Liên hệ</a>
-    </nav>
-  </div>
+    <main class="page-root">
+      <div class="container-main">
+        <div class="breadcrumb">
+          <a href="index.html">Trang chủ</a>
+          <span>/</span>
+          <span>Sản phẩm</span>
+        </div>
 
-  <main class="page-root">
-    <div class="container-main">
-      <div class="breadcrumb">
-        <a href="index.html">Trang chủ</a>
-        <span>/</span>
-        <span>Sản phẩm</span>
-      </div>
+        <section class="page-hero">
+          <p class="eyebrow">Bộ sưu tập 2026</p>
+          <h1 class="section-title" style="font-size: clamp(2.5rem, 5vw, 4rem)">
+            Kính mắt mèo Anna
+          </h1>
+          <p class="section-sub">
+            Một dòng sản phẩm duy nhất — 10 thiết kế độc đáo dành cho phong cách
+            riêng của bạn.
+          </p>
+          <div class="section-divider"></div>
+        </section>
 
-      <section class="page-hero">
-        <p class="eyebrow">Bộ sưu tập 2026</p>
-        <h1 class="section-title" style="font-size: clamp(2.5rem, 5vw, 4rem)">
-          Kính mắt mèo Anna
-        </h1>
-        <p class="section-sub">
-          Một dòng sản phẩm duy nhất — 10 thiết kế độc đáo dành cho phong cách
-          riêng của bạn.
-        </p>
-        <div class="section-divider"></div>
-      </section>
-
-      <section class="glass" style="
+        <section
+          class="glass"
+          style="
             max-width: 64rem;
             margin: 0 auto 5rem;
             padding: 3.5rem;
             border-radius: 1.5rem;
-          ">
-        <div class="feature-grid" style="justify-items: center">
-          <div style="
+          "
+        >
+          <div class="feature-grid" style="justify-items: center">
+            <div
+              style="
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
                 max-width: 260px;
                 gap: 0.75rem;
-              ">
-            <div class="icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-            </div>
-            <h3 style="margin: 0; font-size: 1.125rem; font-weight: 500">
-              Thiết kế Cat Eye
-            </h3>
-            <p style="
+              "
+            >
+              <div class="icon-box">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+              </div>
+              <h3 style="margin: 0; font-size: 1.125rem; font-weight: 500">
+                Thiết kế Cat Eye
+              </h3>
+              <p
+                style="
                   margin: 0;
                   font-size: 0.875rem;
                   color: var(--color-muted);
                   line-height: 1.7;
-                ">
-              Kiểu dáng mắt mèo sang trọng, tôn vinh đường nét khuôn mặt.
+                "
+              >
+                Kiểu dáng mắt mèo sang trọng, tôn vinh đường nét khuôn mặt.
+              </p>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                max-width: 260px;
+                gap: 0.75rem;
+              "
+            >
+              <div class="icon-box">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="1.5"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M8 12l3 3 5-6" />
+                </svg>
+              </div>
+              <h3 style="margin: 0; font-size: 1.125rem; font-weight: 500">
+                Chất lượng cao
+              </h3>
+              <p
+                style="
+                  margin: 0;
+                  font-size: 0.875rem;
+                  color: var(--color-muted);
+                  line-height: 1.7;
+                "
+              >
+                Chất liệu bền bỉ, tròng kính chống UV, khung nhẹ thoải mái.
+              </p>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                max-width: 260px;
+                gap: 0.75rem;
+              "
+            >
+              <div class="icon-box">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  />
+                </svg>
+              </div>
+              <h3 style="margin: 0; font-size: 1.125rem; font-weight: 500">
+                Giá hợp lý
+              </h3>
+              <p
+                style="
+                  margin: 0;
+                  font-size: 0.875rem;
+                  color: var(--color-muted);
+                  line-height: 1.7;
+                "
+              >
+                Từ 450.000đ — phù hợp với phong cách thời trang hiện đại.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="products-grid">
+            <article class="product-card">
+              <div class="product-image">
+                <div class="product-quick-actions">
+                  <button
+                    class="product-floating-btn favorite"
+                    aria-label="Yeu thich"
+                    type="button"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  src="assets/images/TR27075.jpg"
+                  alt="GỌNG KÍNH THỜI TRANG TR27075"
+                  loading="lazy"
+                /><span class="product-badge">Hiện đại</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">GỌNG KÍNH THỜI TRANG TR27075</h3>
+                <p class="product-desc">
+                  Được thiết kế hiện đại, tinh giản và thanh lịch, dễ ứng dụng
+                  với nhiều dáng khuôn mặt. Dễ dàng lắp được tròng kính cận,
+                  viễn, loạn.
+                </p>
+                <div class="product-bottom">
+                  <p class="product-price accent-gradient-text">450.000đ</p>
+                  <button
+                    class="product-cart-btn accent-gradient"
+                    type="button"
+                    aria-label="Them vao gio"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="9" cy="21" r="1" />
+                      <circle cx="20" cy="21" r="1" />
+                      <path
+                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <div class="product-quick-actions">
+                  <button
+                    class="product-floating-btn favorite"
+                    aria-label="Yeu thich"
+                    type="button"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  src="assets/images/S01010.jpg"
+                  alt="GỌNG KÍNH THỜI TRANG S01010"
+                  loading="lazy"
+                /><span class="product-badge">Tối giản</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">GỌNG KÍNH THỜI TRANG S01010</h3>
+                <p class="product-desc">
+                  Phong cách tối giản, tinh tế, phù hợp cho nhu cầu thay tròng
+                  để học tập, làm việc hằng ngày. Form dáng cân đối, tự nhiên.
+                </p>
+                <div class="product-bottom">
+                  <p class="product-price accent-gradient-text">450.000đ</p>
+                  <button
+                    class="product-cart-btn accent-gradient"
+                    type="button"
+                    aria-label="Them vao gio"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="9" cy="21" r="1" />
+                      <circle cx="20" cy="21" r="1" />
+                      <path
+                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <div class="product-quick-actions">
+                  <button
+                    class="product-floating-btn favorite"
+                    aria-label="Yeu thich"
+                    type="button"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  src="assets/images/110049.jpg"
+                  alt="GK. GỌNG KÍNH THỜI TRANG 110049"
+                  loading="lazy"
+                /><span class="product-badge">Trẻ trung</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">GK. GỌNG KÍNH THỜI TRANG 110049</h3>
+                <p class="product-desc">
+                  Gọng kính thời trang, thiết kế trẻ trung. Trọng lượng nhẹ,
+                  giúp thoải mái khi đeo cả ngày dài. Kích thước: 53-17-148 (mm)
+                </p>
+                <div class="product-bottom">
+                  <p class="product-price accent-gradient-text">450.000đ</p>
+                  <button
+                    class="product-cart-btn accent-gradient"
+                    type="button"
+                    aria-label="Them vao gio"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="9" cy="21" r="1" />
+                      <circle cx="20" cy="21" r="1" />
+                      <path
+                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <div class="product-quick-actions">
+                  <button
+                    class="product-floating-btn favorite"
+                    aria-label="Yeu thich"
+                    type="button"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  src="assets/images/110048.jpg"
+                  alt="GK. GỌNG KÍNH THỜI TRANG 110048"
+                  loading="lazy"
+                /><span class="product-badge">Thanh thoát</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">GK. GỌNG KÍNH THỜI TRANG 110048</h3>
+                <p class="product-desc">
+                  Sang trọng, hiện đại với đường nét thanh thoát. Bản lề linh
+                  hoạt, độ bền cao. Kích thước: 53-17-148 (mm)
+                </p>
+                <div class="product-bottom">
+                  <p class="product-price accent-gradient-text">450.000đ</p>
+                  <button
+                    class="product-cart-btn accent-gradient"
+                    type="button"
+                    aria-label="Them vao gio"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="9" cy="21" r="1" />
+                      <circle cx="20" cy="21" r="1" />
+                      <path
+                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <div class="product-quick-actions">
+                  <button
+                    class="product-floating-btn favorite"
+                    aria-label="Yeu thich"
+                    type="button"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  src="assets/images/YC1270.jpg"
+                  alt="GK. GỌNG KÍNH DẺO YC1270"
+                  loading="lazy"
+                /><span class="product-badge">Thanh lịch</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">GK. GỌNG KÍNH DẺO YC1270</h3>
+                <p class="product-desc">
+                  Siêu nhẹ, linh hoạt và chống va đập cực tốt, mang đến sự thoải
+                  mái tối đa khi đeo. Kích thước: 52-18-148 (mm)
+                </p>
+                <div class="product-bottom">
+                  <p class="product-price accent-gradient-text">450.000đ</p>
+                  <button
+                    class="product-cart-btn accent-gradient"
+                    type="button"
+                    aria-label="Them vao gio"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="9" cy="21" r="1" />
+                      <circle cx="20" cy="21" r="1" />
+                      <path
+                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <div class="product-quick-actions">
+                  <button
+                    class="product-floating-btn favorite"
+                    aria-label="Yeu thich"
+                    type="button"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  src="assets/images/NA240.jpg"
+                  alt="GK. GỌNG NHỰA CỨNG KIM LOẠI NA240"
+                  loading="lazy"
+                /><span class="product-badge">Hiện đại</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">GK. GỌNG NHỰA CỨNG KIM LOẠI NA240</h3>
+                <p class="product-desc">
+                  Sự kết hợp hoàn hảo giữa chất liệu nhựa cứng chịu va đập và
+                  càng kim loại chắc chắn giúp tạo độ bền bỉ cao. Chiều rộng
+                  tròng: 55mm
+                </p>
+                <div class="product-bottom">
+                  <p class="product-price accent-gradient-text">450.000đ</p>
+                  <button
+                    class="product-cart-btn accent-gradient"
+                    type="button"
+                    aria-label="Them vao gio"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="9" cy="21" r="1" />
+                      <circle cx="20" cy="21" r="1" />
+                      <path
+                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <div class="product-quick-actions">
+                  <button
+                    class="product-floating-btn favorite"
+                    aria-label="Yeu thich"
+                    type="button"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  src="assets/images/P8013.jpg"
+                  alt="GK. GỌNG KÍNH THỜI TRANG ĐEN P8013"
+                  loading="lazy"
+                /><span class="product-badge">Cá tính</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">GK. GỌNG KÍNH THỜI TRANG ĐEN P8013</h3>
+                <p class="product-desc">
+                  Dáng Cat-eye cổ điển màu đen huyền bí, sắc sảo. Phù hợp làm
+                  kính cận, kính mát hoặc kính thời trang. Kích thước
+                  (Tròng-Cầu-Càng): 52-18-145 (mm)
+                </p>
+                <div class="product-bottom">
+                  <p class="product-price accent-gradient-text">450.000đ</p>
+                  <button
+                    class="product-cart-btn accent-gradient"
+                    type="button"
+                    aria-label="Them vao gio"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="9" cy="21" r="1" />
+                      <circle cx="20" cy="21" r="1" />
+                      <path
+                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <div class="product-quick-actions">
+                  <button
+                    class="product-floating-btn favorite"
+                    aria-label="Yeu thich"
+                    type="button"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  src="assets/images/S11916.jpg"
+                  alt="GK. GỌNG KÍNH THỜI TRANG NÂU DEMI S11916"
+                  loading="lazy"
+                /><span class="product-badge">Vintage</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">
+                  GK. GỌNG KÍNH THỜI TRANG NÂU DEMI S11916
+                </h3>
+                <p class="product-desc">
+                  Dáng mắt mèo tinh tế, màu nâu trà trong suốt nữ tính. Form
+                  siêu nhẹ thanh thoát. Kích thước (Tròng-Cầu-Càng): 52-19-146
+                  (mm)
+                </p>
+                <div class="product-bottom">
+                  <p class="product-price accent-gradient-text">450.000đ</p>
+                  <button
+                    class="product-cart-btn accent-gradient"
+                    type="button"
+                    aria-label="Them vao gio"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="9" cy="21" r="1" />
+                      <circle cx="20" cy="21" r="1" />
+                      <path
+                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <div class="product-quick-actions">
+                  <button
+                    class="product-floating-btn favorite"
+                    aria-label="Yeu thich"
+                    type="button"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  src="assets/images/228013.jpg"
+                  alt="GK. GỌNG MÈO NHỰA 228013 (51.18.143)"
+                  loading="lazy"
+                /><span class="product-badge">Tối giản</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">
+                  GK. GỌNG MÈO NHỰA 228013 (51.18.143)
+                </h3>
+                <p class="product-desc">
+                  Thiết kế mắt mèo trẻ trung, phối màu trắng trong suốt mang lại
+                  vẻ ngoài thanh tú và hiện đại. Kích thước (Tròng-Cầu-Càng):
+                  51-18-143 (mm)
+                </p>
+                <div class="product-bottom">
+                  <p class="product-price accent-gradient-text">350.000đ</p>
+                  <button
+                    class="product-cart-btn accent-gradient"
+                    type="button"
+                    aria-label="Them vao gio"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="9" cy="21" r="1" />
+                      <circle cx="20" cy="21" r="1" />
+                      <path
+                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <div class="product-quick-actions">
+                  <button
+                    class="product-floating-btn favorite"
+                    aria-label="Yeu thich"
+                    type="button"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  src="assets/images/1111100049.jpg"
+                  alt="GK. GỌNG KÍNH THỜI TRANG 1111100049 (53.17.148)"
+                  loading="lazy"
+                /><span class="product-badge">High-fashion</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">
+                  GK. GỌNG KÍNH THỜI TRANG 1111100049 (53.17.148)
+                </h3>
+                <p class="product-desc">
+                  Thuộc BST Keo Lỳ, phong cách Bold Cat-eye với đường viền dày
+                  dặn, đậm chất High-fashion. Kích thước (Tròng-Cầu-Càng):
+                  53-17-148 (mm)
+                </p>
+                <div class="product-bottom">
+                  <p class="product-price accent-gradient-text">880.000đ</p>
+                  <button
+                    class="product-cart-btn accent-gradient"
+                    type="button"
+                    aria-label="Them vao gio"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    >
+                      <circle cx="9" cy="21" r="1" />
+                      <circle cx="20" cy="21" r="1" />
+                      <path
+                        d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container-main">
+        <div class="footer-main">
+          <div>
+            <a
+              href="index.html"
+              class="accent-gradient-text"
+              style="
+                font-size: 1.5rem;
+                letter-spacing: 0.1em;
+                font-weight: 400;
+                display: inline-block;
+                margin-bottom: 1.5rem;
+              "
+              >Anna Eyewear</a
+            >
+            <p
+              style="
+                font-size: 1rem;
+                color: var(--color-muted);
+                line-height: 1.8;
+                font-weight: 300;
+                max-width: 320px;
+                margin: 0;
+              "
+            >
+              Thương hiệu kính mắt thời trang dành cho giới trẻ Việt Nam. Thiết
+              kế tối giản, chất lượng cao cấp, giá cả hợp lý — mỗi chiếc kính là
+              một tuyên ngôn phong cách.
             </p>
           </div>
-
-          <div style="
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                max-width: 260px;
-                gap: 0.75rem;
-              ">
-            <div class="icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M8 12l3 3 5-6" />
-              </svg>
-            </div>
-            <h3 style="margin: 0; font-size: 1.125rem; font-weight: 500">
-              Chất lượng cao
+          <div>
+            <h3
+              style="
+                font-size: 0.875rem;
+                letter-spacing: 0.05em;
+                font-weight: 500;
+                margin: 0 0 1.75rem;
+              "
+            >
+              Khám phá
             </h3>
-            <p style="
-                  margin: 0;
-                  font-size: 0.875rem;
+            <div style="display: flex; flex-direction: column; gap: 1rem">
+              <a
+                href="index.html"
+                class="nav-link"
+                style="
+                  font-size: 1rem;
                   color: var(--color-muted);
-                  line-height: 1.7;
-                ">
-              Chất liệu bền bỉ, tròng kính chống UV, khung nhẹ thoải mái.
-            </p>
+                  padding: 0.25rem 0;
+                "
+                >Trang chủ</a
+              ><a
+                href="san-pham.html"
+                class="nav-link"
+                style="
+                  font-size: 1rem;
+                  color: var(--color-muted);
+                  padding: 0.25rem 0;
+                "
+                >Sản phẩm</a
+              ><a
+                href="ve-anna.html"
+                class="nav-link"
+                style="
+                  font-size: 1rem;
+                  color: var(--color-muted);
+                  padding: 0.25rem 0;
+                "
+                >Về Anna</a
+              >
+            </div>
           </div>
-
-          <div style="
+          <div>
+            <h3
+              style="
+                font-size: 0.875rem;
+                letter-spacing: 0.05em;
+                font-weight: 500;
+                margin: 0 0 1.75rem;
+              "
+            >
+              Liên hệ
+            </h3>
+            <div
+              style="
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                text-align: center;
-                max-width: 260px;
-                gap: 0.75rem;
-              ">
-            <div class="icon-box">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
-                <path
-                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-              </svg>
+                gap: 1.25rem;
+                color: var(--color-muted);
+              "
+            >
+              <span>marketing@kinhmatanna.com</span><span>0941203457</span
+              ><span
+                >Số 194 Võ Văn Ngân, Phường Thủ Đức, Thành phố Hồ Chí Minh</span
+              >
             </div>
-            <h3 style="margin: 0; font-size: 1.125rem; font-weight: 500">
-              Giá hợp lý
-            </h3>
-            <p style="
-                  margin: 0;
-                  font-size: 0.875rem;
-                  color: var(--color-muted);
-                  line-height: 1.7;
-                ">
-              Từ 450.000đ — phù hợp với phong cách thời trang hiện đại.
-            </p>
           </div>
         </div>
-      </section>
-
-      <section>
-        <div class="products-grid" data-product-list="all"></div>
-      </section>
-    </div>
-  </main>
-
-  <footer class="site-footer" data-footer></footer>
-
-  <div class="overlay" data-overlay></div>
-  <aside class="drawer" data-drawer="cart">
-    <div class="drawer-header">
-      <h2 class="drawer-title">Giỏ hàng</h2>
-      <button class="icon-button" data-close-ui aria-label="Đóng giỏ hàng">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M18 6L6 18M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-    <div class="drawer-body" data-cart-body></div>
-    <div class="drawer-footer" data-cart-footer hidden>
-      <div class="drawer-summary">
-        <span style="font-size: 1.0625rem; color: var(--color-muted)">Tổng cộng</span><span class="accent-gradient-text"
-          style="font-size: 1.5rem; font-weight: 600" data-cart-total>0đ</span>
+        <div class="footer-bottom">
+          <p style="font-size: 0.875rem; color: var(--color-muted); margin: 0">
+            © 2026 ANNA Eyewear. All rights reserved.
+          </p>
+        </div>
       </div>
-      <button class="btn-primary" data-open-checkout style="width: 100%">
-        Thanh toán
-      </button>
-    </div>
-  </aside>
-  <aside class="drawer" data-drawer="favorite">
-    <div class="drawer-header">
-      <h2 class="drawer-title" style="display: flex; align-items: center; gap: 0.75rem">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="1.5">
-          <path
-            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-        </svg>Yêu thích
-      </h2>
-      <button class="icon-button" data-close-ui aria-label="Đóng yêu thích">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M18 6L6 18M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-    <div class="drawer-body" data-favorite-body></div>
-  </aside>
-  <div data-checkout-shell class="checkout-modal-shell" hidden>
-    <div class="checkout-modal animate-fade-in">
-      <div class="checkout-header">
-        <h2 class="drawer-title">Thanh toán</h2>
-        <button class="icon-button" data-close-checkout aria-label="Đóng thanh toán">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+    </footer>
+
+    <div class="overlay" data-overlay></div>
+    <aside class="drawer" data-drawer="cart">
+      <div class="drawer-header">
+        <h2 class="drawer-title">Giỏ hàng</h2>
+        <button class="icon-button" data-close-ui aria-label="Đóng giỏ hàng">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
             <path d="M18 6L6 18M6 6l12 12" />
           </svg>
         </button>
       </div>
-      <div class="checkout-success" data-checkout-success hidden>
-        <div class="checkout-success-badge accent-gradient">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--color-bg)" stroke-width="2">
-            <path d="M20 6L9 17l-5-5" />
-          </svg>
+      <div class="drawer-body" data-cart-body></div>
+      <div class="drawer-footer" data-cart-footer hidden>
+        <div class="drawer-summary">
+          <span style="font-size: 1.0625rem; color: var(--color-muted)"
+            >Tổng cộng</span
+          ><span
+            class="accent-gradient-text"
+            style="font-size: 1.5rem; font-weight: 600"
+            data-cart-total
+            >0đ</span
+          >
         </div>
-        <h3 class="font-display" style="
+        <button class="btn-primary" data-open-checkout style="width: 100%">
+          Thanh toán
+        </button>
+      </div>
+    </aside>
+    <aside class="drawer" data-drawer="favorite">
+      <div class="drawer-header">
+        <h2
+          class="drawer-title"
+          style="display: flex; align-items: center; gap: 0.75rem"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#f87171"
+            stroke-width="1.5"
+          >
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+            /></svg
+          >Yêu thích
+        </h2>
+        <button class="icon-button" data-close-ui aria-label="Đóng yêu thích">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="drawer-body" data-favorite-body></div>
+    </aside>
+    <div data-checkout-shell class="checkout-modal-shell" hidden>
+      <div class="checkout-modal animate-fade-in">
+        <div class="checkout-header">
+          <h2 class="drawer-title">Thanh toán</h2>
+          <button
+            class="icon-button"
+            data-close-checkout
+            aria-label="Đóng thanh toán"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="checkout-success" data-checkout-success hidden>
+          <div class="checkout-success-badge accent-gradient">
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="var(--color-bg)"
+              stroke-width="2"
+            >
+              <path d="M20 6L9 17l-5-5" />
+            </svg>
+          </div>
+          <h3
+            class="font-display"
+            style="
               font-size: 1.75rem;
               color: var(--color-text-primary);
               margin: 0 0 0.75rem;
-            ">
-          Đặt hàng thành công!
-        </h3>
-        <p style="font-size: 1rem; color: var(--color-muted); margin: 0">
-          Chúng tôi sẽ liên hệ với bạn sớm nhất.
-        </p>
-      </div>
-      <form class="checkout-form" data-checkout-form>
-        <div class="form-grid">
-          <div>
-            <label class="label">Họ và tên *</label><input type="text" required class="input-base"
-              placeholder="Nhập họ và tên" />
-          </div>
-          <div>
-            <label class="label">Số điện thoại *</label><input type="tel" required class="input-base"
-              placeholder="Nhập số điện thoại" />
-          </div>
-          <div>
-            <label class="label">Địa chỉ *</label><input type="text" required class="input-base"
-              placeholder="Nhập địa chỉ giao hàng" />
-          </div>
-          <div>
-            <label class="label">Ghi chú</label><textarea rows="3" class="input-base" style="resize: none"
-              placeholder="Ghi chú thêm (không bắt buộc)"></textarea>
-          </div>
+            "
+          >
+            Đặt hàng thành công!
+          </h3>
+          <p style="font-size: 1rem; color: var(--color-muted); margin: 0">
+            Chúng tôi sẽ liên hệ với bạn sớm nhất.
+          </p>
         </div>
-        <div style="
+        <form class="checkout-form" data-checkout-form>
+          <div class="form-grid">
+            <div>
+              <label class="label">Họ và tên *</label
+              ><input
+                type="text"
+                required
+                class="input-base"
+                placeholder="Nhập họ và tên"
+              />
+            </div>
+            <div>
+              <label class="label">Số điện thoại *</label
+              ><input
+                type="tel"
+                required
+                class="input-base"
+                placeholder="Nhập số điện thoại"
+              />
+            </div>
+            <div>
+              <label class="label">Địa chỉ *</label
+              ><input
+                type="text"
+                required
+                class="input-base"
+                placeholder="Nhập địa chỉ giao hàng"
+              />
+            </div>
+            <div>
+              <label class="label">Ghi chú</label
+              ><textarea
+                rows="3"
+                class="input-base"
+                style="resize: none"
+                placeholder="Ghi chú thêm (không bắt buộc)"
+              ></textarea>
+            </div>
+          </div>
+          <div
+            style="
               padding-top: 1.5rem;
               border-top: 1px solid var(--color-stroke);
               margin-top: 2rem;
-            ">
-          <div style="
+            "
+          >
+            <div
+              style="
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 1.5rem;
                 gap: 1rem;
-              ">
-            <span style="font-size: 1rem; color: var(--color-muted)" data-checkout-count>0 sản phẩm</span><span
-              class="accent-gradient-text" style="font-size: 1.375rem; font-weight: 600" data-checkout-total>0đ</span>
+              "
+            >
+              <span
+                style="font-size: 1rem; color: var(--color-muted)"
+                data-checkout-count
+                >0 sản phẩm</span
+              ><span
+                class="accent-gradient-text"
+                style="font-size: 1.375rem; font-weight: 600"
+                data-checkout-total
+                >0đ</span
+              >
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%">
+              Xác nhận đặt hàng
+            </button>
           </div>
-          <button type="submit" class="btn-primary" style="width: 100%">
-            Xác nhận đặt hàng
-          </button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-  </div>
-  <div data-product-modal-root></div>
-  <div class="toast" data-toast></div>
-  
-  
-</body>
-
+    <div data-product-modal-root></div>
+    <div class="toast" data-toast></div>
+  </body>
 </html>
