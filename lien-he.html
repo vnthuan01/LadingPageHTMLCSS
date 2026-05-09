@@ -1,0 +1,184 @@
+﻿<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna Eyewear | Kính mắt thời trang cao cấp</title>
+  <meta name="description"
+    content="Anna Eyewear | Thương hiệu kính mắt thời trang với thiết kế tinh tế, hiện đại và cá tính dành cho phong cách sống trẻ." />
+  <link rel="icon" href="logo_anna_header.svg" type="image/svg+xml" sizes="any" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+</head>
+
+<body data-page="contact">
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html"><img src="assets/images/logo_anna.png" alt="ANNA" /></a>
+      <nav class="nav-links">
+        <a class="nav-link nav-link-main" href="index.html">Trang chủ</a>
+        <a class="nav-link nav-link-main" href="san-pham.html">Sản phẩm</a>
+        <a class="nav-link nav-link-main" href="ve-anna.html">Về Anna</a>
+        <a class="nav-link nav-link-main active" href="lien-he.html">Liên hệ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn-primary desktop-only" href="san-pham.html">Khám phá ngay</a>
+        <button class="icon-button" id="nav-favorite-icon" data-open-drawer="favorite" aria-label="Yêu thích">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+          </svg><span class="icon-badge accent-gradient" data-favorite-count hidden>0</span>
+        </button>
+        <button class="icon-button" id="nav-cart-icon" data-open-drawer="cart" aria-label="Giỏ hàng">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+          </svg><span class="icon-badge accent-gradient" data-cart-count hidden>0</span>
+        </button>
+        <button class="icon-button menu-toggle" data-menu-toggle aria-label="Mở menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" data-mobile-menu>
+    <nav>
+      <a class="nav-link nav-link-main" href="index.html">Trang chủ</a>
+      <a class="nav-link nav-link-main" href="san-pham.html">Sản phẩm</a>
+      <a class="nav-link nav-link-main" href="ve-anna.html">Về Anna</a>
+      <a class="nav-link nav-link-main active" href="lien-he.html">Liên hệ</a>
+    </nav>
+  </div>
+
+  <main class="page-root">
+    <div class="container-main">
+      <div class="breadcrumb">
+        <a href="index.html">Trang chủ</a>
+        <span>/</span>
+        <span>Liên hệ</span>
+      </div>
+
+      <div data-contact-page></div>
+    </div>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+
+  <div class="overlay" data-overlay></div>
+  <aside class="drawer" data-drawer="cart">
+    <div class="drawer-header">
+      <h2 class="drawer-title">Giỏ hàng</h2>
+      <button class="icon-button" data-close-ui aria-label="Đóng giỏ hàng">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="drawer-body" data-cart-body></div>
+    <div class="drawer-footer" data-cart-footer hidden>
+      <div class="drawer-summary">
+        <span style="font-size: 1.0625rem; color: var(--color-muted)">Tổng cộng</span><span class="accent-gradient-text"
+          style="font-size: 1.5rem; font-weight: 600" data-cart-total>0đ</span>
+      </div>
+      <button class="btn-primary" data-open-checkout style="width: 100%">
+        Thanh toán
+      </button>
+    </div>
+  </aside>
+  <aside class="drawer" data-drawer="favorite">
+    <div class="drawer-header">
+      <h2 class="drawer-title" style="display: flex; align-items: center; gap: 0.75rem">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="1.5">
+          <path
+            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+        </svg>Yêu thích
+      </h2>
+      <button class="icon-button" data-close-ui aria-label="Đóng yêu thích">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="drawer-body" data-favorite-body></div>
+  </aside>
+  <div data-checkout-shell class="checkout-modal-shell" hidden>
+    <div class="checkout-modal animate-fade-in">
+      <div class="checkout-header">
+        <h2 class="drawer-title">Thanh toán</h2>
+        <button class="icon-button" data-close-checkout aria-label="Đóng thanh toán">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="checkout-success" data-checkout-success hidden>
+        <div class="checkout-success-badge accent-gradient">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--color-bg)" stroke-width="2">
+            <path d="M20 6L9 17l-5-5" />
+          </svg>
+        </div>
+        <h3 class="font-display" style="
+              font-size: 1.75rem;
+              color: var(--color-text-primary);
+              margin: 0 0 0.75rem;
+            ">
+          Đặt hàng thành công!
+        </h3>
+        <p style="font-size: 1rem; color: var(--color-muted); margin: 0">
+          Chúng tôi sẽ liên hệ với bạn sớm nhất.
+        </p>
+      </div>
+      <form class="checkout-form" data-checkout-form>
+        <div class="form-grid">
+          <div>
+            <label class="label">Họ và tên *</label><input type="text" required class="input-base"
+              placeholder="Nhập họ và tên" />
+          </div>
+          <div>
+            <label class="label">Số điện thoại *</label><input type="tel" required class="input-base"
+              placeholder="Nhập số điện thoại" />
+          </div>
+          <div>
+            <label class="label">Địa chỉ *</label><input type="text" required class="input-base"
+              placeholder="Nhập địa chỉ giao hàng" />
+          </div>
+          <div>
+            <label class="label">Ghi chú</label><textarea rows="3" class="input-base" style="resize: none"
+              placeholder="Ghi chú thêm (không bắt buộc)"></textarea>
+          </div>
+        </div>
+        <div style="
+              padding-top: 1.5rem;
+              border-top: 1px solid var(--color-stroke);
+              margin-top: 2rem;
+            ">
+          <div style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1.5rem;
+                gap: 1rem;
+              ">
+            <span style="font-size: 1rem; color: var(--color-muted)" data-checkout-count>0 sản phẩm</span><span
+              class="accent-gradient-text" style="font-size: 1.375rem; font-weight: 600" data-checkout-total>0đ</span>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%">
+            Xác nhận đặt hàng
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div data-product-modal-root></div>
+  <div class="toast" data-toast></div>
+  
+  
+</body>
+
+</html>
